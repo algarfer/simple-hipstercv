@@ -2,7 +2,7 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{fontawesome}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0cm}
 \usepackage{paracol}
 \usepackage{ifthen}
@@ -126,7 +126,6 @@
 }
 
 
-
 %----------------------------------------------------- font highlighting / boxes with background color 
 \newcommand{\bg}[3]{\colorbox{#1}{\bfseries\color{#2}#3}}
 \newcommand{\bgupper}[3]{\colorbox{#1}{\color{#2}\huge\bfseries\MakeUppercase{#3}}}
@@ -176,8 +175,12 @@
 }
 
 \newcommand{\cvevent}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#6}}}
+\newcommand{\cveventA}[5]{{#1} & \textbf{#2}\newline {#3 ~\faMapMarker}\newline{\color{black!70}\footnotesize #4}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#5}}}
+\newcommand{\cveventB}[4]{{#1} & \textbf{#2}\newline {#3 ~\faMapMarker}\newline{\color{black!70}\footnotesize #4}}
+\newcommand{\cveventC}[5]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em}}
 
 \newcommand{\cvdegree}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 {\phantom{i}\footnotesize ~\faUniversity}}\newline{\color{black!70}\scriptsize #5}\vspace{0.5em} & \raisebox{-0.7\height}{\includegraphics[height=0.5cm]{#6}}}
+\newcommand{\cvdegreeA}[5]{{#1} & \textbf{#2}\newline {#3 {\phantom{i}\footnotesize ~\faUniversity}}\newline{\color{black!70}\scriptsize #4}\vspace{0.5em} & \raisebox{-0.7\height}{\includegraphics[height=0.5cm]{#5}}}
 
 
 
