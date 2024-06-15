@@ -7,6 +7,15 @@ A more simple, lightweight and a little bit different version of the Hipster CV
 These images are in the CV just for demonstration.
 Please replace them with your own photos and logos if you use this template!
 
+# Installation
+
+## TeX Live
+
+1. Go to `C:\<path>\texlive\<year>\texmf-dist\tex\latex`
+2. `mkdir simplehipstercv`
+3. Copy the `.sty` and `.cls` files to the previous created dir
+4. Run `texhash` or `mktexlsr`
+
 # Preview (withoutsidebar option)
 ![Timeline CV](https://github.com/latex-ninja/simple-hipstercv/blob/master/withoutsidebar.png)
 
